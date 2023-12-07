@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css"
+    />
+
+    <link rel="stylesheet" href="./styles/main.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    @include("./sections/header.html")
+
+    <div class="scrollContainer" data-scroll-container>
+      <div data-scroll-section>
+        @include("./sections/start-section.html")
+        @include("./sections/speakers-section.html")
+        @include("./sections/schedule-section.html")
+        @include("./sections/gallery-section.html")
+        @include("./sections/form-section.html")
+        @include("./sections/book-section.html")
+        @include("./sections/sponsors-section.html")
+        @include("./sections/become-sponsor-section.html")
+      </div>
+    </div>
+
+    @include("./modals/golf.html") @include("./modals/speakers.html")
+    @include("./modals/sponsor.html")
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.5/dist/locomotive-scroll.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

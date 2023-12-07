@@ -1,0 +1,9 @@
+@mixin app-font($size, $height, $color, $weight, $style: normal) {
+  font-family: "Roboto Serif";
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  font-style: $style;
+  color: $color;
+  font-display: swap;
+}
